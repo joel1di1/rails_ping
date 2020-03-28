@@ -1,6 +1,9 @@
 Layout/LineLength:
   Max: 120
 
+Documentation:
+  Enabled: false
+
 Style/HashEachMethods:
   Enabled: true
 
@@ -9,3 +12,6 @@ Style/HashTransformKeys:
 
 Style/HashTransformValues:
   Enabled: true
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
