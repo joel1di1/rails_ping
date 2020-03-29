@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class RailsPing::PingController < ApplicationController
+class RailsPing::PingController < ActionController::Base
   def ping
     map = {
       'hostname' => Socket.gethostname,
