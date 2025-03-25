@@ -11,4 +11,3 @@
 .rspec_status
 
 .DS_Store
-rails_ping*.gem
