@@ -1,0 +1,22 @@
+version: 2
+updates:
+  # Enable version updates for Ruby gems
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+      time: "05:00"
+      timezone: "Europe/Paris"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "ruby"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    versioning-strategy: increase
+    groups:
+      dependencies:
+        patterns:
+          - "*"
